@@ -8,11 +8,18 @@
     <title>HANGMAN</title>
   </head>
   <body>
+    <div class='guess-panel'>
+    <h1> Let's Play a Game! </h1>
+    <p> Guess one letter at a time, but be careful you only have seven lives </p>
+    </div>
     <div id='images'>
       <img id='1' src="img/hangman1.jpg">
     </div>
+    <div class='guess-panel'>
     <input type="text" id="guess-input">
     <button class="btn" type="button" id="goal-button">Guess!</button>
+    <div id="word-length"></div>
+  </div>
     <div id="answer-blanks"></div>
   </body>
 </html>

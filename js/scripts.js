@@ -6,6 +6,7 @@ $(function(){
   var guessedLetter;
   var phraseLength = phraseArray.length;
   var picNumber = 1;
+  $('#word-length').append('<p>this word has ' + phraseArray.length + ' letters.</p>')
   for(var i = 0; i < phraseLength; i++) {
     $('#answer-blanks').append('<p id="letter' + i + '">' + phraseArray[i]+'</p>');
   }

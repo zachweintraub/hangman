@@ -4,11 +4,43 @@
 
 #answer-blanks {
   color: white;
+  margin-left: 50%;
 
 }
 
 .letter {
   color: black;
+}
+
+[id^=letter] {
   float: left;
+  margin-right: 10px;
+  text-decoration: underline black;
+  font-size: 24px;
+}
+
+.btn {
+  border: solid black;
+  width: 100px;
+  height: 50px;
+  font-size: 25px;
+}
+
+#guess-input {
+  width: 25px;
+  height: 50px;
+  font-size: 25px;
+  border: solid black;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.guess-panel {
   text-align: center;
+}
+
+#images {
+  margin-left: 25%;
 }
