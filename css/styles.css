@@ -4,8 +4,11 @@
 
 #answer-blanks {
   color: white;
+
 }
 
 .letter {
   color: black;
+  float: left;
+  text-align: center;
 }

@@ -1,6 +1,7 @@
 $(function(){
-
-  var phrase = 'pizza';
+  var words = ['pizza','invader', 'jacket', 'computer', 'watermelon', 'epicodus', 'lasagna', 'beer', 'vodka', 'beautiful', 'tetris', 'halo', 'scrabble']
+  var phrase = words[parseInt(Math.random()*words.length)];
+  console.log(phrase);
   var phraseArray = phrase.split('');
   var guessedLetter;
   var phraseLength = phraseArray.length;
@@ -13,13 +14,22 @@ $(function(){
     $('#guess-input').val('');
     if(phrase.includes(guessedLetter)) {
       for(var i = 0; i < phraseLength; i++) {
-      if(guessedLetter === phraseArray[i]) {
+      if(guessedLetter == phraseArray[i]) {
         $('#letter'+i).addClass('letter');
       }
     }} else {
+      if(picNumber==6){
+        $('#'+picNumber).remove();
+        picNumber++;
+        $('#images').append('<img id="' + picNumber + '" src="img/hangman' + picNumber +'.jpg">');
+          if(confirm('YOU LOSE! the answer was "' + phrase + '". play again?')){
+            location.reload();
+          }
+      }
       $('#'+picNumber).remove();
       picNumber++;
       $('#images').append('<img id="' + picNumber + '" src="img/hangman' + picNumber +'.jpg">');
+
 
 
 
