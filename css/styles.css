@@ -1,0 +1,11 @@
+.hiding {
+  display: none;
+}
+
+#answer-blanks {
+  color: white;
+}
+
+.letter {
+  color: black;
+}
