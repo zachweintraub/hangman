@@ -8,7 +8,7 @@ $(function(){
   var picNumber = 1;
   $('#word-length').append('<p>this word has ' + phraseArray.length + ' letters.</p>')
   for(var i = 0; i < phraseLength; i++) {
-    $('#answer-blanks').append('<p id="letter' + i + '">' + phraseArray[i]+'</p>');
+    $('#answer-blanks').append('<p id="letter' + i + '">_</p>');
   }
   $('button').click(function(){
     guessedLetter = $('#guess-input').val().toLowerCase();
@@ -16,7 +16,7 @@ $(function(){
     if(phrase.includes(guessedLetter)) {
       for(var i = 0; i < phraseLength; i++) {
       if(guessedLetter == phraseArray[i]) {
-        $('#letter'+i).addClass('letter');
+        $('#letter'+i).text(phraseArray[i]);
       }
     }} else {
       if(picNumber==6){

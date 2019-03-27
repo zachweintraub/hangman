@@ -3,7 +3,6 @@
 }
 
 #answer-blanks {
-  color: white;
   margin-left: 50%;
 
 }
@@ -15,7 +14,6 @@
 [id^=letter] {
   float: left;
   margin-right: 10px;
-  text-decoration: underline black;
   font-size: 24px;
 }
 
