@@ -1,31 +1,44 @@
+body {
+  font-family: monospace;
+}
+
 .btn {
   border: solid black;
-  width: 100px;
+  width: 50%;
   height: 50px;
-  font-size: 25px;
+  font-size: 14px;
+  text-align: left;
+  padding: 5px;
+}
+
+.container {
+  padding-bottom: 5%;
+  width: 70vw;
 }
 
 #guess-input {
-  width: 25px;
+  width: 40%;
   height: 50px;
   font-size: 25px;
   border: solid black;
+  margin-left: 50%;
+  margin-right: 10%;
 }
 
 .btn:hover {
   cursor: pointer;
 }
 
-.guess-panel {
+.guess-panel, #word-length {
   text-align: center;
 }
 
 #images {
-  margin-left: 25%;
+  margin-left: 15%;
 }
 
 img {
-  height: 500px;
+  height: 350px;
 }
 
 #wrong-guesses {
@@ -33,6 +46,11 @@ img {
 }
 
 #answer, #bad-letters {
-  letter-spacing: 15px;
+  letter-spacing: 10px;
   font-size: 20px;
+  text-align: center;
+}
+
+.col-xs-2, .col-xs-3 {
+  padding: 0px;
 }

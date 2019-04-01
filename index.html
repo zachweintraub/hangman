@@ -2,29 +2,57 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <title>HANGMAN</title>
   </head>
   <body>
-    <div class='guess-panel'>
-    <h1> Let's Play a Game! </h1>
-    <p> Guess one letter at a time, but be careful you only have seven lives </p>
-    </div>
-    <div id='images'>
-      <img id='1' src="img/hangman1.jpg">
-    </div>
-    <div class='guess-panel'>
-    <input type="text" id="guess-input">
-    <button class="btn" type="button" id="goal-button">Guess!</button>
-    <div id="word-length"></div>
-  </div>
-    <div id="answer-blanks">
-      <p id="answer"></p>
-    </div>
-    <div id="wrong-guesses">
-      <p><strong>Bad Guesses:</strong> <span id='bad-letters'></span></p>
+    <div class="container">
+      <div class='guess-panel'>
+        <h1> Let's Play HANGMAN! </h1>
+        <p>The theme is food.</p>
+        <p> Guess one letter at a time only.</p>
+        <p>You lose after seven incorrect guesses.</p>
+        <p>Pay attention! Don't guess the same thing twice.</p>
+      </div>
+      <div id='images'>
+        <img id='1' src="img/hangman1.jpg">
+      </div>
+      <div class="row">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6">
+          <div id="answer-blanks">
+            <p id="answer"></p>
+          </div>
+        </div>
+        <div class="col-xs-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-3">
+          <input type="text" id="guess-input">
+        </div>
+        <div class="col-xs-3">
+          <button class="btn" type="button" id="goal-button">Guess</button>
+        </div>
+        <div class="col-xs-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6">
+          <div id="word-length"></div>
+        </div>
+        <div class="col-xs-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6" id="wrong-guesses">
+          <p><strong>Bad Guesses:</strong> <span id='bad-letters'></span></p>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
     </div>
   </body>
 </html>

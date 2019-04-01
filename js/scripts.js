@@ -10,7 +10,7 @@ var wordInProgress = '';
 var badLetters = '';
 
 $(function(){
-  $('#word-length').append('<p>this word has ' + phraseLength + ' letters.</p>')
+  $('#word-length').append('<p>This word has ' + phraseLength + ' letters.</p>')
   for(var i = 0; i < phraseLength; i++) {
     wordInProgress = wordInProgress.concat('_');
     $('#answer').text(wordInProgress);
